@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Restaurant Results</title>
+		<meta http-equiv="Content-Type" : content = "text/html; charset=UTF-8">
+		<link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+	
+	<div class="container">
+
+		<h3>Restaurant Confirmation</h3>
+		<p>Thank you for adding your restaurant!</p>
+		<h4>Restaurant:</h4>
+		Name: <span th:text="${name}" />
+		<br/><br/>
+		Owner: <span th:text="${owner}" />
+		<br/><br/>
+		Phone: <span th:text="${phoneNumber}" />
+		<br/><br/>
+		Address: <span th:text="${address}" />
+		<br/><br/>
+		
+		<a th:href="@{/}"><button class="btn btn-success">Check Out The Restaurants!</button></a>
+		<a th:href="@{/new}"><button class="btn btn-success">Add Another Restaurant!</button></a>
+	</div>
+		
+		<script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+	</body>
+
+
+</html>
